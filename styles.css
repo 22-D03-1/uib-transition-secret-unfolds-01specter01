@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    border: 0;
 }
 html,
 body {
@@ -15,37 +16,38 @@ body {
     align-items: center;
 }
 main {
-    width: 700px;
-    height: 400px;
+    width: 1000px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-
-#one {
-    width: 10em;
-    height: 10em;
-    background-color: blue;
-
-    top: 0em;
-    left: 10em;
-    position: absolute;
-}
-#one:hover {
+main:hover #one {
     transform: rotate(90deg);
     left: 0em;
     transition-duration: 2s;
 }
+#one {
+    width: 10em;
+    height: 10em;
+    background-color: blue;
+    z-index: 2;
+    top: 0em;
+    left: 10em;
+    position: absolute;
+}
+
 #two {
     width: 10em;
     height: 10em;
     background-color: yellow;
     position: absolute;
     top: 10em;
+    z-index: 2;
     left: 10em;
 }
-#two:hover {
+main:hover #two {
     transform: rotate(-90deg);
     left: 0em;
     transition-duration: 2s;
@@ -55,11 +57,11 @@ main {
     height: 10em;
     background-color: gray;
     position: absolute;
-
+    z-index: 2;
     top: 0px;
     left: 20em;
 }
-#three:hover {
+main:hover #three {
     transform: rotate(-90deg);
     left: 30em;
     transition-duration: 2s;
@@ -72,8 +74,9 @@ main {
 
     top: 10em;
     left: 20em;
+    z-index: 2;
 }
-#four:hover {
+main:hover #four {
     transform: rotate(90deg);
     position: absolute;
 
@@ -82,6 +85,9 @@ main {
 }
 #hi h1 {
     position: absolute;
-    top: 4.5em;
-    left: 9.25em;
+    top: 3.6em;
+    left: 7.75em;
+    font-weight: 500;
+    font-size: xx-large;
+    z-index: 1;
 }
