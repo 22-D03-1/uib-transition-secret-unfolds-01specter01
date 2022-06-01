@@ -1,0 +1,73 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+main {
+    transition: all;
+    cursor: pointer;
+    margin: 100px;
+}
+
+#one {
+    width: 10em;
+    height: 10em;
+    background-color: blue;
+
+    top: 0em;
+    left: 10em;
+    position: absolute;
+}
+#one:hover {
+    transform: translateX(180px) rotate(-90deg);
+    position: relative;
+    transition-duration: 2s;
+}
+#two {
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    position: absolute;
+    top: 10em;
+    left: 10em;
+}
+#two:hover {
+    transform: rotate(90deg) translateX(-180px);
+
+    transition-duration: 2s;
+}
+#three {
+    width: 10em;
+    height: 10em;
+    background-color: gray;
+    position: absolute;
+
+    top: 0px;
+    left: 20em;
+}
+#three:hover {
+    transform: rotate(90deg) translateX(-180px);
+
+    transition-duration: 2s;
+}
+#four {
+    width: 10em;
+    height: 10em;
+    background-color: brown;
+    position: absolute;
+
+    top: 10em;
+    left: 20em;
+}
+#four:hover {
+    transform: rotate(90deg) translateX(-180px);
+
+    transition-duration: 2s;
+}
+#hi h1 {
+    position: absolute;
+    top: 4.5em;
+    left: 9.25em;
+}
