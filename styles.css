@@ -5,10 +5,22 @@
     padding: 0;
     margin: 0;
 }
+html,
+body {
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 main {
-    transition: all;
-    cursor: pointer;
-    margin: 100px;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 #one {
@@ -21,8 +33,8 @@ main {
     position: absolute;
 }
 #one:hover {
-    transform: translateX(180px) rotate(-90deg);
-    position: relative;
+    transform: rotate(90deg);
+    left: 0em;
     transition-duration: 2s;
 }
 #two {
@@ -34,8 +46,8 @@ main {
     left: 10em;
 }
 #two:hover {
-    transform: rotate(90deg) translateX(-180px);
-
+    transform: rotate(-90deg);
+    left: 0em;
     transition-duration: 2s;
 }
 #three {
@@ -48,8 +60,8 @@ main {
     left: 20em;
 }
 #three:hover {
-    transform: rotate(90deg) translateX(-180px);
-
+    transform: rotate(-90deg);
+    left: 30em;
     transition-duration: 2s;
 }
 #four {
@@ -62,8 +74,10 @@ main {
     left: 20em;
 }
 #four:hover {
-    transform: rotate(90deg) translateX(-180px);
+    transform: rotate(90deg);
+    position: absolute;
 
+    left: 30em;
     transition-duration: 2s;
 }
 #hi h1 {
